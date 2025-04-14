@@ -30,6 +30,8 @@ ul{
 
 .heading-section{
     height: 55px;
+    margin: auto;
+    width: 100%;
     background-color: #fff;
 }
 .header{
@@ -44,6 +46,7 @@ ul{
     height: 100%;
     margin: 8px 16px 8px 16px;
     gap: 8px;
+    
 }
 .searchBar{
     height: 40px;
@@ -61,8 +64,10 @@ ul{
 }
 
 .header-nav{
-    width: 600px;
-    margin-right: 150px;
+    /* max-width: 600px;
+    width: 100%; */
+    flex-basis: 600px;
+    /* margin-right: 150px; */
 }
 
 .header-nav ul{
@@ -83,14 +88,15 @@ ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-right: 20px;
+    padding-inline: 20px;
+    margin-right: 20px;
 }
 
 .header-right ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
 }
 
 .header-right ul li{
@@ -111,7 +117,8 @@ ul{
 
 .home-section{
     display: grid;
-    grid-template-columns: 360px auto 360px;
+    grid-template-columns: auto auto auto   ;
+    /* grid-template-columns :repeat(auto-fill, 1fr); */
 }
 .left-section{
     /* background-color: #65686c; */
@@ -156,9 +163,15 @@ width: 25px;
 }
 
 .right-section{
+    /* max-width: 360px; */
+    display: flex;
+    justify-content: flex-end;
+}
+.right-section-container{
     height: 100vh;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .right-section-line-top{
@@ -242,13 +255,17 @@ width: 25px;
 
 .main-section{
     /* background-color: green; */
+     display: flex; 
+    /* flex-direction: column; */
+    justify-content: flex-end; 
+    /* background-color: red; */
+
 }
 
 .main-section-container{
     height: 100vh;
-    /* background-color: yellow; */
     max-width: 580px;
-    margin: 10px 0px 10px 100px;
+    margin: 10px 0px 100px 10px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -294,7 +311,7 @@ width: 25px;
     padding: 8px;
 }
 .post-content-top-textBox{
-    height: 40px;
+    height: auto;
     /* width: 240px; */
     width: 100%;
     background-color: var(--secondary-background-color);
@@ -427,4 +444,9 @@ width: 25px;
     gap: 5px;
     /* background-color: gray; */
     padding: 6px 10px;
+}
+
+.main-section-footer{
+    text-align: center;
+    padding: 10px;
 }

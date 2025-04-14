@@ -1,0 +1,128 @@
+/* @media only screen and (max-width: 600px){
+
+}
+
+max-width 600px  - Extra small devices(phones)
+
+min-width 600px - Small devices (potrait tabler and large phones
+
+min-width 768px - Medium devices ( Landscape tablets)
+
+min-width 992px - Large devices (Laptops/desktops)
+
+min-width 1200px - Extra large devices (large laptops and desktops) */
+
+/* 1099 px in fb site  */
+
+@media screen and (max-width: 600px) {
+    .searchBar div{
+        display: none;
+    }
+    .searchBar{
+        height: 40px;
+        width: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-section{
+        display: grid;
+        grid-template-columns: minmax(100vw, 1fr);
+        grid-template-rows: minmax(100vh, 1fr);
+        align-items: center;
+        justify-content: center;
+    }
+    .post-content-bottom{
+        flex-wrap: wrap;
+    }
+    .post-media{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+    }
+    .post-content{
+        height: auto;
+    }
+    .post-content-bottom{
+        margin-inline: 4px;
+    }
+    .post-content-type{
+        gap: 2px;
+        padding: 6px 8px;
+    }
+    .post-media img{
+        width: 100%;
+    }
+    .header-right{
+        display: none;
+    }
+    .header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .header-nav{
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .right-section{
+        display: none;
+    }
+    .home-section{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .header-right{
+        display: none;
+    }
+    .searchBar div{
+        display: none;
+    }
+    .searchBar{
+        height: 40px;
+        width: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .header{
+        justify-content: center;
+    }
+    .header-left{
+        margin: 2px 4px 2px 4px;
+    }
+    .header-nav{
+        margin-right: 150px;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .left-section{
+        display: none;
+    }
+    .heading-section{
+        width: 100vw;
+    }
+    .home-section{
+        display: grid;
+        grid-template-columns: auto;
+        /* column-gap: 50px; */
+        justify-content: center;
+    }
+    .header-nav{
+        margin-right: 0px;
+    }
+    .header-left{
+        margin: 4px 8px 4px 8px;
+    }
+}
+
+@media screen and (max-width: 1062px) {
+    .right-section{
+        display: none;
+    }
+}
