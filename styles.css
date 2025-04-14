@@ -67,6 +67,7 @@ ul{
     /* max-width: 600px;
     width: 100%; */
     flex-basis: 600px;
+    margin-inline: 5px;
     /* margin-right: 150px; */
 }
 
